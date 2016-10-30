@@ -63,7 +63,7 @@ jQuery(function($){
 		},
 		mpbtn_qqkefu:{
 			title: '悦牙网QQ客服',
-			content: '<div class="ibar_plugin_content"><div class="ibar_cart_group ibar_cart_product"><ul class="floatDqq">      <li><a target="_blank" href="tencent://message/?uin=3518955275&amp;Site=sc.chinaz.com&amp;Menu=yes"><img src="http://static.yueyawang.com/new_pc/images/qq.png?v=123" align="absmiddle">在线客服1号</a></li>      <li><a target="_blank" href="tencent://message/?uin=3090196682&amp;Site=sc.chinaz.com&amp;Menu=yes"><img src="http://static.yueyawang.com/new_pc/images/qq.png?v=123" align="absmiddle">在线客服2号</a></li>      <li><a target="_blank" href="tencent://message/?uin=1487211367&amp;Site=sc.chinaz.com&amp;Menu=yes"><img src="http://static.yueyawang.com/new_pc/images/qq.png?v=123" align="absmiddle">在线客服3号</a></li></ul></div></div>',
+			content: '<div class="ibar_plugin_content"><div class="ibar_cart_group ibar_cart_product"><ul class="floatDqq">      <li><a target="_blank" href="tencent://message/?uin=1487211367&amp;Site=sc.chinaz.com&amp;Menu=yes"><img src="http://static.yueyawang.com/new_pc/images/qq_service.png?v=123" align="absmiddle">在线客服1号</a></li>      <li><a target="_blank" href="tencent://message/?uin=3518955275&amp;Site=sc.chinaz.com&amp;Menu=yes"><img src="http://static.yueyawang.com/new_pc/images/qq_service.png?v=123" align="absmiddle">在线客服2号</a></li>      <li><a target="_blank" href="tencent://message/?uin=3090196682&amp;Site=sc.chinaz.com&amp;Menu=yes"><img src="http://static.yueyawang.com/new_pc/images/qq_service.png?v=123" align="absmiddle">在线客服3号</a></li></ul></div></div>',
 			init: $.noop
 		}
 	};

@@ -32,7 +32,7 @@ var myApp = new Framework7({
     $$.getJSON('/user/profile_data', function (result) {
         myApp.hideIndicator();
         if( result.success == 1 ){
-            $$('.page[data-page="user"] .page-content .content-block .user-profile').html(myApp.templates.userTemplate(
+            $$('.page[data-page="user"] .page-content .user-bg .user-head .user-pic').html(myApp.templates.userTemplate(
                     result.data
             ));
         }else{
@@ -194,14 +194,12 @@ function login(){
                   $$('.modal-overlay.modal-overlay-visible').remove();
                   if ($$('.index-dl.login').length) {
                     $$('.index-dl.login').remove();
-                  };
+                  }; 
+		  //处理login登陆成功后的结果
                   if ($$('.menu-login .login').length) {
                     $$('.menu-login').html('<a href="/user/logout" class="external logout">退出</a>');                    
                   };
                   sessionStorage.is_logined = 'logined';
-
-                  sessionStorage.setItem('login_user_record_session','1');
-                  
               }
             },
             error:function() {

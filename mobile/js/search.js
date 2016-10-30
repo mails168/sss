@@ -20,6 +20,17 @@ function GetRequest() {
 if(typeof search_type == 'undefined') {
 	search_type = 0;		
 }
+
+ var theRequest = GetRequest();
+  if (typeof theRequest.stype != 'undefined') {
+      search_type = theRequest.stype;
+  };
+
+  if(typeof theRequest.search_type != 'undefined') {
+      search_type = theRequest.search_type;
+  };
+  
+
 function unique(arr) {
     var result = [], hash = {};
     for (var i = 0, elem; (elem = arr[i]) != null; i++) {
@@ -202,9 +213,14 @@ function checkInputFinished(kw) {
 
 $$(document).on('input propertychange', 'input[type="search"]', function(e){ 
   if (isEnter) {return};
-  $$('.searchResult').html('');  
+  if (search_type == 0) {
+    $$('.searchResult').html('');  
 
-  searchAjax($$(this).val())
+    searchAjax($$(this).val())  
+  } else {
+    //do nohting, wait for new case
+  }
+  
   
 });
 

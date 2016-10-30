@@ -16,7 +16,9 @@
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
-	z-index: 1
+	z-index: 1;
+	padding-top: 23px;
+	
 }
 .swiper-container-no-flexbox .swiper-slide {
 	float: left
